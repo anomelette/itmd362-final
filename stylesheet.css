@@ -1,39 +1,38 @@
-/* Import font family */
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+/* ---------------------------------------
+   GOOGLE FONTS
+--------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Indie+Flower&display=swap');
 
-/* Global resets */
+/* ---------------------------------------
+   GLOBAL RESET
+--------------------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ---------------------------------------
-   BASE TYPOGRAPHY
---------------------------------------- */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Inria Serif', serif;
   line-height: 1.5;
   color: #333;
 }
 
 /* ---------------------------------------
-   BUTTONS (Main Section)
+   HEADER / TOP NAVIGATION
 --------------------------------------- */
-.button {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border: 1px solid #333;
-  color: #333;
-
-  /* Use Indie Flower for button text */
-  font-family: 'Indie Flower', cursive;
-  font-size: 1.1rem;
-  cursor: pointer;
+header {
+  flex: 0 0 auto;
 }
 
-/* Navigation (top) */
 header nav ul {
   list-style: none;
   display: flex;
@@ -51,19 +50,16 @@ header nav ul li a {
    HERO SECTION
 --------------------------------------- */
 #hero {
-  /* Put your image here */
   background-image: url('media/bookstorelamp.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  height: 70vh; /* Adjust as needed */
-
+  height: 40vh; /* Adjust as needed */
   display: flex;
-  justify-content: flex-end;  /* Content aligned to the right */
+  justify-content: flex-end;  /* text on right */
   align-items: center;
   padding-right: 4rem;
-  color: white; /* Optional — depends on your image */
+  color: white;
   text-align: right;
 }
 
@@ -72,17 +68,26 @@ header nav ul li a {
 }
 
 /* ---------------------------------------
-   THREE-COLUMN SECTION
+   MAIN SECTION - THREE COLUMNS
 --------------------------------------- */
+main {
+  flex: 1 0 auto; /* grows to fill space between hero & footer */
+  display: flex;
+  width: 100%;
+}
+
 .three-columns {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 2rem;
-  gap: 2rem;
+  gap: 1rem; /* spacing between columns */
+  flex: 1; /* fill full height of main */
+  width: 100%;
 }
 
+/* Columns */
 .column {
   flex: 1;
+  padding: 1.5rem;
 }
 
 .column h2 {
@@ -93,35 +98,60 @@ header nav ul li a {
   margin-bottom: 1.5rem;
 }
 
-/* Placeholder button styling (you can update later) */
+/* Middle column (Used Books) background */
+.three-columns .column:nth-child(2) {
+  background-color: #f5f0e8;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------------------------------
+   BUTTONS (Main Section)
+--------------------------------------- */
 .button {
   display: inline-block;
   padding: 0.5rem 1rem;
   text-decoration: none;
   border: 1px solid #333;
   color: #333;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
 /* ---------------------------------------
    FOOTER
 --------------------------------------- */
 footer {
+  flex: 0 0 auto; /* stick to bottom */
   padding: 2rem;
-  background: #f3f3f3; /* You can change this later */
+  background: #f3f3f3;
 }
 
 .footer-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* closer columns */
+  gap: 2rem;
+}
+
+.footer-column {
+  min-width: 120px;
+}
+
+.footer-column h3 {
+  margin-bottom: 0.5rem;
 }
 
 .footer-column ul {
   list-style: none;
-  margin-top: 0.5rem;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.25rem;
 }
 
 .footer-column ul li a {
   text-decoration: none;
   color: inherit;
 }
-
