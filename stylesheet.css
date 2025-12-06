@@ -52,7 +52,7 @@ header nav ul li a {
 --------------------------------------- */
 #hero {
   /* Put your image here */
-  background-image: url('images/bookstorelamp.jpg');
+  background-image: url('media/bookstorelamp.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
