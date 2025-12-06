@@ -182,6 +182,71 @@ main {
 }
 
 /* ---------------------------------------
+   CONTACT PAGE
+--------------------------------------- */
+.contact-container {
+  display: flex;
+  width: 100%;
+  min-height: 70vh;
+  background-color: #F0DCC4;
+  color: #58220D;
+}
+
+.contact-image {
+  flex: 1;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-content {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* CARDS */
+.contact-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  flex: 1;
+  background: #824E38;
+  color: #F0DCC4;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+/* HOURS */
+.contact-hours h2 {
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-image {
+    height: 40vh;
+  }
+
+  .contact-cards {
+    flex-direction: column;
+  }
+}
+
+/* ---------------------------------------
    BUTTONS
 --------------------------------------- */
 .button {
