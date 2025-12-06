@@ -220,14 +220,15 @@ main {
 
 .contact-card {
   flex: 1;
-  background: #824E38;
-  color: #F0DCC4;
+  background: #86886C;
+  color: #FFFFFF;
   padding: 1.5rem;
   border-radius: 10px;
 }
 
 /* HOURS */
 .contact-hours h2 {
+  justify-content: center;
   margin-bottom: 1rem;
 }
 
