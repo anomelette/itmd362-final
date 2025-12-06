@@ -66,8 +66,15 @@ header nav ul li a {
   text-align: right;
 }
 
+.hero-content p {
+  font-size: 20px;
+}
 .hero-content {
-  max-width: 500px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* title aligned right */
+  text-align: center;    /* key message text will be centered */
 }
 
 /* ---------------------------------------
