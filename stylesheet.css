@@ -40,7 +40,7 @@ header nav ul {
   list-style: none;
   display: flex;
   justify-content: flex-end; /* Right side */
-  gap: 2rem;
+  gap: 7rem;
   padding: 1rem 2rem;
 }
 
