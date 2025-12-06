@@ -1,1 +1,127 @@
+/* Import font family */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+
+/* Global resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------
+   BASE TYPOGRAPHY
+--------------------------------------- */
+body {
+  font-family: 'Inria Serif', serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* ---------------------------------------
+   BUTTONS (Main Section)
+--------------------------------------- */
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: 1px solid #333;
+  color: #333;
+
+  /* Use Indie Flower for button text */
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Navigation (top) */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* Right side */
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------------------------------------
+   HERO SECTION
+--------------------------------------- */
+#hero {
+  /* Put your image here */
+  background-image: url('images/bookstorelamp.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 70vh; /* Adjust as needed */
+
+  display: flex;
+  justify-content: flex-end;  /* Content aligned to the right */
+  align-items: center;
+  padding-right: 4rem;
+  color: white; /* Optional — depends on your image */
+  text-align: right;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+/* ---------------------------------------
+   THREE-COLUMN SECTION
+--------------------------------------- */
+.three-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h2 {
+  margin-bottom: 1rem;
+}
+
+.column p {
+  margin-bottom: 1.5rem;
+}
+
+/* Placeholder button styling (you can update later) */
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: 1px solid #333;
+  color: #333;
+}
+
+/* ---------------------------------------
+   FOOTER
+--------------------------------------- */
+footer {
+  padding: 2rem;
+  background: #f3f3f3; /* You can change this later */
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: inherit;
+}
 
