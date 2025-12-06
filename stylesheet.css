@@ -48,6 +48,13 @@ header nav ul li a {
   color: inherit;
 }
 
+nav ul li.active a {
+  background: #4B4D26;          /* warm brown fill */
+  color: #F0DCC4;               /* text color stays light */
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+}
+
 /* ---------------------------------------
    HOME PAGE
 --------------------------------------- */
