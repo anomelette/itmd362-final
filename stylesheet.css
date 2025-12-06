@@ -147,16 +147,17 @@ main {
   flex-direction: column;
   justify-content: center;   /* centers top-to-bottom */
   align-items: center;       /* centers the whole text block left-right */
-  gap: 2rem;
+  gap: .8rem;
   text-align: center;          
 }
 
 .about-text h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .about-text p {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  padding-bottom: 2rem;
 }
 
 .about-image {
