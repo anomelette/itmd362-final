@@ -14,7 +14,6 @@
 
 html, body {
   height: 100%;
-  margin: 0;
 }
 
 body {
@@ -39,7 +38,7 @@ header {
 header nav ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end; /* Right side */
+  justify-content: flex-end;
   gap: 7rem;
   padding: 1rem 2rem;
 }
@@ -50,16 +49,16 @@ header nav ul li a {
 }
 
 /* ---------------------------------------
-   HERO SECTION
+   HOME PAGE
 --------------------------------------- */
 #hero {
   background-image: url('media/bookstorelamp.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 40vh; /* Adjust as needed */
+  height: 40vh;
   display: flex;
-  justify-content: flex-end;  /* text on right */
+  justify-content: flex-end;
   align-items: center;
   padding-right: 4rem;
   color: white;
@@ -69,19 +68,17 @@ header nav ul li a {
 .hero-content p {
   font-size: 20px;
 }
+
 .hero-content {
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* title aligned right */
-  text-align: center;    /* key message text will be centered */
+  align-items: flex-end;
+  text-align: center;
 }
 
-/* ---------------------------------------
-   MAIN SECTION - THREE COLUMNS
---------------------------------------- */
 main {
-  flex: 1 0 auto; /* grows to fill space between hero & footer */
+  flex: 1 0 auto;
   display: flex;
   width: 100%;
   background-color: #F0DCC4;
@@ -89,27 +86,22 @@ main {
 
 .three-columns {
   display: flex;
-    justify-content: center; /* centers columns horizontally */
-  align-items: stretch; /* ensures all columns same height */
-  gap: 1rem; /* spacing between columns */
-  flex: 1; /* fill full height of main */
-  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+  flex: 1;
 }
 
-/* Columns */
 .column {
   flex: 1;
   padding: 1.5rem;
   background-color: #F0DCC4;
   color: #58220D;
-  
-  /* Center text and buttons */
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers children horizontally */
-  justify-content: center; /* keep content top-aligned */
-}
+  align-items: center;
+  justify-content: center;
 }
 
 .column h2 {
@@ -120,16 +112,73 @@ main {
   margin-bottom: 1.5rem;
 }
 
-/* Middle column (Used Books) background */
+/* Middle Column */
 .three-columns .column:nth-child(2) {
   background-color: #824E38;
   color: #F0DCC4;
-  display: flex;
-  flex-direction: column;
 }
 
 /* ---------------------------------------
-   BUTTONS (Main Section)
+   ABOUT PAGE
+--------------------------------------- */
+#page-title {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  background: #824E38;
+  color: #FFFFFF;
+}
+
+#page-title h1 {
+  font-size: 2.5rem;
+}
+
+.about-container {
+  display: flex;
+  width: 100%;
+  min-height: 70vh;
+}
+
+.about-text {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-image {
+    height: 40vh;
+  }
+}
+
+/* ---------------------------------------
+   BUTTONS
 --------------------------------------- */
 .button {
   display: inline-block;
@@ -142,28 +191,25 @@ main {
   font-family: 'Indie Flower', cursive;
   font-size: 1.5rem;
   cursor: pointer;
-  
 }
 
 /* ---------------------------------------
    FOOTER
 --------------------------------------- */
 footer {
-  flex: 0 0 auto; /* stick to bottom */
+  flex: 0 0 auto;
   padding: 2rem;
   background: #58220D;
   color: #F0DCC4;
-  font-size: 12px;
 }
 
 .footer-nav {
   display: flex;
-  justify-content: center; /* closer columns */
+  justify-content: center;
   gap: 2rem;
 }
 
 .footer-column {
-  min-width: 120px;
   text-align: center;
 }
 
@@ -173,7 +219,6 @@ footer {
 
 .footer-column ul {
   list-style: none;
-  padding: 0;
 }
 
 .footer-column ul li {
