@@ -20,10 +20,11 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 30vh;
   font-family: 'Inria Serif', serif;
   line-height: 1.5;
   color: #333;
+  font-size: 18px;
 }
 
 /* ---------------------------------------
@@ -31,6 +32,8 @@ body {
 --------------------------------------- */
 header {
   flex: 0 0 auto;
+  background: #58220D;
+  color: #F0DCC4;
 }
 
 header nav ul {
@@ -74,11 +77,13 @@ main {
   flex: 1 0 auto; /* grows to fill space between hero & footer */
   display: flex;
   width: 100%;
+  background-color: #F0DCC4;
 }
 
 .three-columns {
   display: flex;
-  justify-content: space-between;
+    justify-content: center; /* centers columns horizontally */
+  align-items: stretch; /* ensures all columns same height */
   gap: 1rem; /* spacing between columns */
   flex: 1; /* fill full height of main */
   width: 100%;
@@ -88,13 +93,15 @@ main {
 .column {
   flex: 1;
   padding: 1.5rem;
+  background-color: #F0DCC4;
+  color: #58220D;
   
   /* Center text and buttons */
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center; /* centers children horizontally */
-  justify-content: flex-start; /* keep content top-aligned */
+  justify-content: center; /* keep content top-aligned */
 }
 }
 
@@ -108,7 +115,8 @@ main {
 
 /* Middle column (Used Books) background */
 .three-columns .column:nth-child(2) {
-  background-color: #f5f0e8;
+  background-color: #824E38;
+  color: #F0DCC4;
   display: flex;
   flex-direction: column;
 }
@@ -120,11 +128,14 @@ main {
   display: inline-block;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  border: 1px solid #333;
-  color: #333;
+  border: 3px solid #FFFFFF;
+  border-radius: 5px;
+  background-color: #4B4D26;
+  color: #FFFFFF;
   font-family: 'Indie Flower', cursive;
   font-size: 1.1rem;
   cursor: pointer;
+  
 }
 
 /* ---------------------------------------
@@ -133,17 +144,20 @@ main {
 footer {
   flex: 0 0 auto; /* stick to bottom */
   padding: 2rem;
-  background: #f3f3f3;
+  background: #58220D;
+  color: #F0DCC4;
+  font-size: 12px;
 }
 
 .footer-nav {
   display: flex;
-  justify-content: flex-start; /* closer columns */
+  justify-content: center; /* closer columns */
   gap: 2rem;
 }
 
 .footer-column {
   min-width: 120px;
+  text-align: center;
 }
 
 .footer-column h3 {
