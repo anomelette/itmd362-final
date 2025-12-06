@@ -137,6 +137,7 @@ main {
   display: flex;
   width: 100%;
   min-height: 70vh;
+  color: #58220D;
 }
 
 .about-text {
@@ -144,8 +145,10 @@ main {
   padding: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;   /* centers top-to-bottom */
+  align-items: center;       /* centers the whole text block left-right */
   gap: 2rem;
+  text-align: center;          
 }
 
 .about-text h2 {
@@ -153,7 +156,7 @@ main {
 }
 
 .about-text p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .about-image {
@@ -201,12 +204,13 @@ footer {
   padding: 2rem;
   background: #58220D;
   color: #F0DCC4;
+  font-size: 12px;
 }
 
 .footer-nav {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 10rem;
 }
 
 .footer-column {
