@@ -311,6 +311,7 @@ main {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .contact-card {
@@ -318,9 +319,12 @@ main {
   background: #86886C;
   color: #FFFFFF;
   padding: 1.5rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
+.contact-hours {
+  text-align: center;
+}
 .contact-hours h2 {
   margin-bottom: 1rem;
 }
