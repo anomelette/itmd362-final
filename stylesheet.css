@@ -191,6 +191,109 @@ main {
   }
 }
 
+/* EVENTS PAGE */
+.events-section, .gallery-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #824E38;
+}
+
+/* Upcoming Events Cards */
+.event-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background-color: #F0DCC4;
+  border: 2px solid #824E38;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #58220D;
+}
+
+.event-card .event-date,
+.event-card .event-time {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.event-card h3 {
+  margin: 0.5rem 0;
+}
+
+/* Gallery Section */
+.gallery-section {
+  background: #824E38; /* different background color */
+  color: #F0DCC4;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-item p {
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  flex: 0 0 auto;
+  padding: 2rem;
+  background: #58220D;
+  color: #F0DCC4;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .events-container, .gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-card, .gallery-item {
+    width: 90%;
+  }
+}
 /* ---------------------------------------
    DONATE PAGE (ISOLATED — DOES NOT AFFECT OTHER PAGES)
 --------------------------------------- */
