@@ -323,6 +323,14 @@ main {
   border-radius: 5px;
 }
 
+.contact-card h3 {
+  margin-bottom: 1.5rem;
+}
+
+.contact-card p {
+  gap: 1px;
+}
+
 .contact-hours {
   text-align: center;
 }
