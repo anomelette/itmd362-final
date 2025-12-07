@@ -97,7 +97,7 @@ main {
   display: flex;
 }
 
-.home-main .three-columns {
+.three-columns {
   flex: 1;
   display: flex;
   justify-content: center;
