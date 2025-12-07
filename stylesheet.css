@@ -311,6 +311,7 @@ main {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  text-align: center;
 }
 
 .contact-cards {
@@ -318,6 +319,10 @@ main {
   gap: 2rem;
   flex-wrap: wrap;
   text-align: center;
+}
+
+.contact-card h3 {
+  margin-bottom: 1.25rem;
 }
 
 .contact-card {
