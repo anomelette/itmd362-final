@@ -278,7 +278,15 @@ main {
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
-
+.books-column { 
+  display: flex; /* horizontal row */ 
+  gap: 1rem; /* spacing between cards */ 
+  overflow-x: visible; /* no scrollbar needed */ 
+  padding-bottom: 1rem; 
+} 
+.books-column .book-card { 
+  flex: 0 0 150px; /* narrower cards */ 
+}
 .books-row {
   display: flex;
   flex-wrap: nowrap;     /* prevents wrapping */
