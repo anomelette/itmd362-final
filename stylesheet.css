@@ -288,7 +288,7 @@ main {
 }
 
 .books-column .book-card { 
-  flex: 0 0 125px; /* narrower cards */ 
+  flex: 0 0 120px; /* narrower cards */ 
 }
 .books-row {
   display: flex;
@@ -311,7 +311,7 @@ main {
 
 
 .book-card img {
-  height: 100px;
+  height: 150px;
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 0.5rem;
