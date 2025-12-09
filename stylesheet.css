@@ -228,6 +228,7 @@ main {
   border: none;
   border-radius: 6px;
   font-family: 'Inria Serif', serif;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -278,6 +279,17 @@ main {
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
+
+.book-meta {
+    min-height: 70px;        /* adjust if needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
 .books-column {
   display: flex;
   gap: 1rem;
@@ -314,17 +326,21 @@ main {
   height: 150px;
   object-fit: cover;
   border-radius: 6px;
-  margin-bottom: 0.5rem;
 }
 
 .book-title {
   font-weight: bold;
   font-size: 1.1rem;
+  color: #4B4D26;
+  margin-bottom: 0.1rem;   /* reduces space under title */
+  line-height: 1.1;
 }
 
 .book-author {
   font-size: 0.95rem;
   color: #4B4D26;
+  margin-top: 0;           /* removes extra top spacing */
+  line-height: 1.1;
 }
 
 /* VIEW MORE BUTTON */
@@ -648,7 +664,12 @@ footer {
   padding: 2rem;
   background: #58220D;
   color: #F0DCC4;
-  font-size: 12px;
+  font-size: 10px;
+}
+
+footer, 
+footer * {
+  font-family: "Inria Sans", sans-serif;
 }
 
 .footer-nav {
