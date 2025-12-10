@@ -843,9 +843,9 @@ form button:hover {
 /* SALE POP UP */
 .sale-popup {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #824E38;
+    top: 20%;
+    right: 35%;
+    background-color: #86886C;
     color: #F0DCC4;
     padding: 1.8rem 2.5rem;
     border-radius: 12px;
