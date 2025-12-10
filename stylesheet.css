@@ -1,11 +1,7 @@
-/* ---------------------------------------
-   GOOGLE FONTS
---------------------------------------- */
+/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Indie+Flower&display=swap');
 
-/* ---------------------------------------
-   GLOBAL RESET
---------------------------------------- */
+/* GLOBAL RESET */
 * {
   margin: 0;
   padding: 0;
@@ -27,9 +23,7 @@ body {
   background-color: #F0DCC4;
 }
 
-/* ---------------------------------------
-   HEADER / TOP NAVIGATION
---------------------------------------- */
+/* HEADER AND NAVIGATION */
 header {
   flex: 0 0 auto;
   background: #58220D;
@@ -56,9 +50,7 @@ nav ul li.active a {
   border-radius: 6px;
 }
 
-/* ---------------------------------------
-   HOME PAGE
---------------------------------------- */
+/* HOME PAGE */
 #hero {
   background-image: url('media/bookstorelamp.jpg');
   background-size: cover;
@@ -91,7 +83,6 @@ main {
   width: 100%;
 }
 
-/* Only home page should stretch full height */
 .home-main {
   flex: 1;
   display: flex;
@@ -130,9 +121,7 @@ main {
   color: #F0DCC4;
 }
 
-/* ---------------------------------------
-   ABOUT PAGE
---------------------------------------- */
+/* ABOUT PAGE */
 #page-title {
   width: 100%;
   padding: 2rem 0;
@@ -190,9 +179,9 @@ main {
     height: 40vh;
   }
 }
-/* ------------------------------
-   BOOKS PAGE – SEARCH SECTION
------------------------------- */
+/* BOOKS PAGE */
+
+/* Search section */
 .books-search {
   padding: 3rem 2rem;
   text-align: center;
@@ -243,9 +232,7 @@ main {
   font-weight: bold;
 }
 
-/* ------------------------------
-   GENRE SECTION
------------------------------- */
+/* Genre section */
 
 .genre-titles,
 .genre-buttons {
@@ -293,26 +280,25 @@ main {
 .books-column {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;        /* allow cards to wrap inside the section */
-  justify-content: center;/* center the cards horizontally */
-  overflow-x: hidden;     /* prevent scrolling/overflow */
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-x: hidden;
   padding-bottom: 1rem;
 }
 
 .books-column .book-card { 
-  flex: 0 0 120px; /* narrower cards */ 
+  flex: 0 0 120px;
 }
 .books-row {
   display: flex;
-  flex-wrap: nowrap;     /* prevents wrapping */
+  flex-wrap: nowrap;
   gap: 2rem;
-  overflow-x: auto;      /* allows scrolling if too wide */
+  overflow-x: auto;
   padding-bottom: 1rem;
 }
 
-/* Book cards remain the same size */
 .book-card {
-  flex: 0 0 250px;       /* fixed width; prevents flex shrinking */
+  flex: 0 0 250px;
   background: #FFFFFF;
   padding: 1rem;
   border-radius: 8px;
@@ -330,18 +316,18 @@ main {
 .book-title {
   font-size: 13px;
   color: #4B4D26;
-  margin-bottom: 0rem;   /* reduces space under title */
+  margin-bottom: 0rem;
   line-height: 1.1;
 }
 
 .book-author {
   font-size: 11px;
   color: #4B4D26;
-  margin-top: 0;           /* removes extra top spacing */
+  margin-top: 0;
   line-height: 0;
 }
 
-/* VIEW MORE BUTTON */
+/* View More buttons */
 .view-more {
   display: inline-block;
   margin-top: 2rem;
@@ -368,9 +354,7 @@ main {
   }
 }
 
-/* 
-EVENTS PAGE
-*/
+/* EVENTS PAGE*/
 .events-section, .gallery-section {
   padding: 4rem 2rem;
   text-align: center;
@@ -474,9 +458,7 @@ footer {
     width: 90%;
   }
 }
-/* ---------------------------------------
-   DONATE PAGE (ISOLATED — DOES NOT AFFECT OTHER PAGES)
---------------------------------------- */
+/* DONATE PAGE */
 .donate-wrapper {
   display: flex;
   flex-direction: column;
@@ -486,7 +468,7 @@ footer {
 
 .donate-section {
   display: flex;
-  flex: 1;       /* top and bottom take equal height */
+  flex: 1;
   width: 100%;
   align-items: stretch;
   gap: 0;
@@ -498,11 +480,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;   /* horizontally centers all text */
-  text-align: center;    /* centers text inside the text box */
+  align-items: center; 
+  text-align: center; 
 }
 
-/* TOP SECTION: text left, image right */
+/* Top section: text left, image right */
 .top-donate-section {
   flex-direction: row;
   background: #F0DCC4;
@@ -529,7 +511,7 @@ footer {
   border-radius: 0;
 }
 
-/* BOTTOM SECTION: image left, text right */
+/* Bottom section: image left, text right */
 .bottom-donate-section {
   flex-direction: row;
   background: #824E38; 
@@ -585,9 +567,7 @@ footer {
   }
 }
 
-/* ---------------------------------------
-   CONTACT PAGE
---------------------------------------- */
+/* CONTACT PAGE */
 .contact-container {
   display: flex;
   width: 100%;
@@ -597,7 +577,6 @@ footer {
   overflow: hidden;
 }
 
-/* LEFT SIDE — stays visible while scrolling */
 .contact-image {
   flex: 1;
   position: sticky;
@@ -611,12 +590,11 @@ footer {
   object-fit: cover;
 }
 
-/* RIGHT SIDE — scrolls fully */
 .contact-content {
   flex: 1;
   padding: 3rem;
   overflow-y: auto;
-  max-height: 100vh;    /* allows full scroll */
+  max-height: 100vh; 
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -685,9 +663,7 @@ footer {
 }
 
 
-/* ---------------------------------------
-   BUTTONS
---------------------------------------- */
+/* BUTTONS */
 .button {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -713,9 +689,9 @@ footer a {
 .button:hover,
 header nav ul li a:hover,
 footer a:hover {
-  background-color: #4B4D26; /* highlight background */
-  color: #F0DCC4;            /* light text */
-  transform: translateY(-2px); /* subtle lift */
+  background-color: #4B4D26; 
+  color: #F0DCC4;
+  transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
   padding: 0.5rem;
   border-radius: 5px;
@@ -765,9 +741,7 @@ footer * {
 }
 
 
-/* ---------------------------------------
-   FORM STYLING (GLOBAL — WORKS ON ANY PAGE)
---------------------------------------- */
+/* CONTACT FORM */
 form {
   width: 100%;
   max-width: 550px;
