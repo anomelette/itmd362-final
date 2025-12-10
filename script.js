@@ -1,8 +1,14 @@
 // INTERACTION 1: Sale pop-up message
 window.addEventListener("load", () => {
-    setTimeout(() => {
-        alert("🎉 Limited Time Offer! Enjoy 50% off all used books this week!");
-    }, 5000); // show popup 5 seconds after page loads
+    const isHomePage = window.location.pathname.endsWith("index.html") ||
+                       window.location.pathname === "/" ||
+                       window.location.pathname === "";
+
+    if (isHomePage) {
+        setTimeout(() => {
+            alert("🎉 Limited Time Offer! Enjoy 50% off all used books this week!");
+        }, 5000);
+    }
 });
 
 // INTERACTION 2: Form Submission Confirmation
