@@ -23,3 +23,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+function showPopup(message, type = 'success') {
+  const popup = document.getElementById('popup');
+  popup.textContent = message;
+
+  // Add close button again
+  const closeBtn = document.createElement('button');
+  closeBtn.className = 'close-popup';
+  closeBtn.textContent = '×';
+  closeBtn.onclick = closePopup;
+  popup.appendChild(closeBtn);
+
+  popup.className = `form-popup show ${type}`;
+
+  // Auto-hide after 3 seconds
+  setTimeout(() => {
+    popup.classList.remove('show');
+  }, 3000);
+}
+
+function closePopup() {
+  const popup = document.getElementById('popup');
+  popup.classList.remove('show');
+}
