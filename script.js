@@ -6,10 +6,24 @@ window.addEventListener("load", () => {
 
     if (isHomePage) {
         setTimeout(() => {
-            alert("🎉 Limited Time Offer! Enjoy 50% off all used books this week!");
+            showSalePopup("🎉 Limited Time Offer! Enjoy 50% off all used books this week!");
         }, 2000);
     }
 });
+
+// Create popup container
+function showSalePopup(message) {
+    const popup = document.createElement("div");
+    popup.classList.add("sale-popup");
+    popup.innerHTML = `<p>${message}</p><button class="close-popup">CLOSE</button>`;
+
+    document.body.appendChild(popup);
+
+    // Close button functionality
+    popup.querySelector(".close-popup").addEventListener("click", () => {
+        popup.remove();
+    });
+}
 
 // INTERACTION 2: Form Submission Confirmation
 document.addEventListener("DOMContentLoaded", () => {
@@ -20,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault(); // prevents page reload
       form.reset();
 
-      // Create popup container
+      // Create confirmation container
       const popup = document.createElement("div");
       popup.classList.add("popup-notification");
       popup.innerHTML = `
