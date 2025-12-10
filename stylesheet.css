@@ -839,3 +839,42 @@ form button {
 form button:hover {
   background: #58220D;
 }
+
+/* Styled popup notification */
+.popup-notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #824E38;
+  color: #F0DCC4;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  z-index: 9999;
+  text-align: center;
+  font-family: 'Inria Serif', serif;
+  font-size: 1.2rem;
+  animation: popupFadeIn 0.3s ease-out;
+}
+
+.popup-notification .popup-close {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4B4D26;
+  color: #F0DCC4;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'Indie Flower', cursive;
+}
+
+.popup-notification .popup-close:hover {
+  background-color: #58220D;
+}
+
+/* Fade-in animation */
+@keyframes popupFadeIn {
+  from { opacity: 0; transform: translate(-50%, -60%); }
+  to { opacity: 1; transform: translate(-50%, -50%); }
+}
