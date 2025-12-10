@@ -658,6 +658,11 @@ footer {
   margin-bottom: 1rem;
 }
 
+.contact-hours p {
+  font-size: 23px;
+  line-height: 3rem;
+}
+
 @media (max-width: 900px) {
   .contact-container {
     flex-direction: column;
