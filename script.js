@@ -13,19 +13,13 @@ window.addEventListener("load", () => {
 
 // INTERACTION 2: Form Submission Confirmation
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector("form"); // grabs the first form
-    const popup = document.getElementById("form-popup");
+    const form = document.querySelector("form"); // grabs the first form on the page
 
     if (form) {
         form.addEventListener("submit", (e) => {
-            e.preventDefault(); // prevent page reload
-            popup.style.display = "block"; // show popup
+            e.preventDefault(); // prevents page reload
+            alert("Thank you! Your form has been submitted.");
             form.reset();
         });
     }
 });
-
-function closePopup() {
-    const popup = document.getElementById("form-popup");
-    popup.style.display = "none"; // hide popup
-}
