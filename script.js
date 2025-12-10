@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
     if (isHomePage) {
         setTimeout(() => {
             alert("🎉 Limited Time Offer! Enjoy 50% off all used books this week!");
-        }, 5000);
+        }, 2000);
     }
 });
 
