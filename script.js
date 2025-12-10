@@ -13,13 +13,31 @@ window.addEventListener("load", () => {
 
 // INTERACTION 2: Form Submission Confirmation
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector("form"); // grabs the first form on the page
+  const form = document.querySelector("form"); 
 
-    if (form) {
-        form.addEventListener("submit", (e) => {
-            e.preventDefault(); // prevents page reload
-            alert("Thank you! Your form has been submitted.");
-            form.reset();
-        });
-    }
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault(); // prevents page reload
+      form.reset();
+
+      // Create popup container
+      const popup = document.createElement("div");
+      popup.classList.add("popup-notification");
+      popup.innerHTML = `
+        <p>Thank you! Your form has been submitted.</p>
+        <button class="popup-close">Close</button>
+      `;
+      document.body.appendChild(popup);
+
+      // Close popup on button click
+      popup.querySelector(".popup-close").addEventListener("click", () => {
+        popup.remove();
+      });
+
+      // Auto-remove after 5 seconds
+      setTimeout(() => {
+        if (popup) popup.remove();
+      }, 5000);
+    });
+  }
 });
