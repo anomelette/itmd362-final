@@ -840,7 +840,49 @@ form button:hover {
   background: #58220D;
 }
 
-/* Styled popup notification */
+/* SALE POP UP */
+.sale-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #824E38;
+    color: #F0DCC4;
+    padding: 1.8rem 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    font-family: 'Inria Serif', serif;
+    font-size: 1.25rem;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    z-index: 9999;
+    animation: slideUp 0.5s ease;
+}
+
+/* Close button */
+.sale-popup .close-popup {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4B4D26;
+    color: #F0DCC4;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.sale-popup .close-popup:hover {
+    background-color: #58220D;
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* FORM SUBMISSION NOTIFICATION */
 .popup-notification {
   position: fixed;
   top: 50%;
