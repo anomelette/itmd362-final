@@ -625,8 +625,12 @@ footer {
 
 .contact-card h3 {
   margin-bottom: 1.25rem;
+  font-size: 20px;
 }
 
+.contact-card p {
+  font-size: 15px;
+}
 .contact-card {
   flex: 1 1 250px;
   width: 375px;
