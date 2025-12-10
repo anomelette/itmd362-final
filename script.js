@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       popup.classList.add("popup-notification");
       popup.innerHTML = `
         <p>Thank you! Your form has been submitted.</p>
-        <button class="popup-close">Close</button>
+        <button class="popup-close">CLOSE</button>
       `;
       document.body.appendChild(popup);
 
