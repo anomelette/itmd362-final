@@ -178,7 +178,7 @@ main {
 
 .about-image img {
   width: 100%;
-  height: 100%;
+  height: 110%;
   object-fit: cover;
 }
 
@@ -591,18 +591,13 @@ footer {
 .contact-container {
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   background-color: #F0DCC4;
   color: #58220D;
-  overflow: hidden;
 }
 
-/* LEFT SIDE — stays visible while scrolling */
 .contact-image {
   flex: 1;
-  position: sticky;
-  top: 0;
-  height: 100vh;
 }
 
 .contact-image img {
@@ -611,12 +606,8 @@ footer {
   object-fit: cover;
 }
 
-/* RIGHT SIDE — scrolls fully */
 .contact-content {
-  flex: 1;
   padding: 3rem;
-  overflow-y: auto;
-  max-height: 100vh;    /* allows full scroll */
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -640,7 +631,6 @@ footer {
 .contact-card p {
   font-size: 15px;
 }
-
 .contact-card {
   flex: 1 1 250px;
   width: 375px;
@@ -653,7 +643,6 @@ footer {
 .contact-hours {
   text-align: center;
 }
-
 .contact-hours h2 {
   margin-bottom: 1rem;
 }
@@ -661,25 +650,14 @@ footer {
 @media (max-width: 900px) {
   .contact-container {
     flex-direction: column;
-    overflow: visible;
   }
-
   .contact-image {
-    position: static;
     height: 40vh;
   }
-
-  .contact-content {
-    max-height: none;
-    overflow-y: visible;
-  }
-
   .contact-cards {
     flex-direction: column;
   }
 }
-
-
 
 /* ---------------------------------------
    BUTTONS
